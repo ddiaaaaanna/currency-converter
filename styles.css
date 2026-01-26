@@ -1,9 +1,126 @@
-.photo-side {
+body {
+  margin: 0;
+  background-color: black;
+  font-family: "Google Sans", sans-serif;
+}
+
+.currency-exchange {
+  display: flex;
+  align-items: center;
+}
+
+.photo-side,
+.info-side {
   width: 50vw;
   height: 100%;
   overflow: hidden;
 }
 
 .photo-side img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 35px;
+  color: white;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    0 -1px 3px rgba(255, 255, 255, 0.5);
+}
+
+.h1-converter-lettering {
+  font-size: 3rem;
+  margin-left: 8px;
+}
+
+h1 span {
+  color: #718368;
+}
+
+label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+}
+
+small {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(148, 148, 148, 1);
+}
+
+#input-current-value {
+  padding: 15px;
+  width: 60%;
+}
+
+.current-value-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-box {
+  display: flex;
+  align-items: center;
+}
+
+#currency-options {
+  width: 15%;
+  height: 5%;
+  padding: 15px;
+}
+
+#choose-currency {
+  padding: 16px;
+  width: 49%;
+  margin-bottom: 5px;
+  background-color: rgba(25, 25, 25, 1);
+  color: rgba(212, 212, 212, 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+.choose-currency-label {
+  margin-top: 35px;
+}
+
+button {
+  margin-top: 35px;
+  border: none;
+  gap: 8px;
+  padding: 15px 45px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* PANAIKINTI RODYKLELES IMPUT  */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
