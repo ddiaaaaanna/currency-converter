@@ -1,0 +1,9 @@
+.photo-side {
+  width: 50vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.photo-side img {
+  object-fit: cover;
+}
