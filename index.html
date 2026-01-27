@@ -28,17 +28,14 @@
           <div class="input-container">
             <div class="field-row">
               <div class="input-field">
-                <label for="number-input">Turima suma:</label>
+                <label for="number-input">Current amount:</label>
                 <input
                   type="number"
                   id="number-input"
                   class="field-control"
                   min="1"
                 />
-                <small
-                  >Įveskite savo turimą pinigų sumą ir pasirinkite
-                  valiutą.</small
-                >
+                <small>Enter the amount you have and select a currency.</small>
               </div>
               <select id="from-currency">
                 <option value="eur">EUR</option>
@@ -49,7 +46,7 @@
             </div>
             <div class="input-field">
               <label for="to-currency" class="to-currency-label"
-                >Norima valiuta:</label
+                >Target currency:</label
               >
               <select id="to-currency" class="field-control">
                 <option value="usd">United States Dollar</option>
@@ -58,10 +55,10 @@
                 <option value="eur">Euro</option>
               </select>
               <small
-                >Pasirinkite į kokią valiutą norite keisti turimą sumą.</small
+                >Select the currency you want to convert your amount to.</small
               >
             </div>
-            <button id="convert-btn">Konvertuoti</button>
+            <button id="convert-btn">Convert</button>
           </div>
         </div>
       </div>
