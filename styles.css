@@ -4,6 +4,11 @@ body {
   font-family: "Google Sans", sans-serif;
 }
 
+input,
+select {
+  font-family: inherit;
+}
+
 .currency-exchange {
   display: flex;
   align-items: center;
@@ -54,57 +59,53 @@ small {
   color: rgba(148, 148, 148, 1);
 }
 
-#input-current-value {
-  padding: 15px;
-  width: 60%;
-}
-
-.current-value-box {
-  display: flex;
-  flex-direction: column;
-}
-
-.top-box {
+.field-row {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
-#currency-options {
-  width: 15%;
-  height: 5%;
-  padding: 15px;
-}
-
-#choose-currency {
+.field-control,
+#from-currency {
   padding: 16px;
-  width: 49%;
   margin-bottom: 5px;
   background-color: rgba(25, 25, 25, 1);
   color: rgba(212, 212, 212, 1);
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
-  gap: 8px;
   border: none;
   border-radius: 8px;
 }
 
-label {
-  margin-bottom: 5px;
+#number-input {
+  flex: 1;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
+
+#from-currency {
+  width: 100px;
+}
+
+#to-currency {
+  width: 320px;
 }
 
 input {
   margin-bottom: 5px;
 }
 
-.choose-currency-label {
+.to-currency-label {
   margin-top: 35px;
 }
 
-button {
+#convert-btn {
   margin-top: 35px;
   border: none;
-  gap: 8px;
   padding: 15px 45px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 1);
@@ -114,7 +115,7 @@ button {
   color: rgba(0, 0, 0, 1);
 }
 
-button:hover {
+#convert-btn:hover {
   cursor: pointer;
 }
 

@@ -26,47 +26,42 @@
             >
           </h1>
           <div class="input-container">
-            <div class="top-box">
-              <!-- PERVADINTI KLASES PAVADINIMA - LABIAU PERNAUDOJAMAS -->
-              <div class="current-value-box">
-                <label for="input-current-value">Turima suma:</label>
-                <!-- PERVADINTI KLASES PAVADINIMA - LABIAU PERNAUDOJAMAS -->
+            <div class="field-row">
+              <div class="input-field">
+                <label for="number-input">Turima suma:</label>
                 <input
                   type="number"
-                  id="input-current-value"
-                  class="input-current-value"
-                  min="1.00"
+                  id="number-input"
+                  class="field-control"
+                  min="1"
                 />
                 <small
                   >Įveskite savo turimą pinigų sumą ir pasirinkite
                   valiutą.</small
                 >
               </div>
-              <select name="" id="currency-options">
+              <select id="from-currency">
                 <option value="eur">EUR</option>
                 <option value="aud">AUD</option>
                 <option value="cad">CAD</option>
                 <option value="usd">USD</option>
               </select>
             </div>
-            <!-- PERVADINTI KLASES PAVADINIMA - LABIAU PERNAUDOJAMAS -->
-            <div class="current-value-box">
-              <!-- PERVADINTI KLASES PAVADINIMA - LABIAU PERNAUDOJAMAS -->
-              <label for="choose-currency" class="choose-currency-label"
+            <div class="input-field">
+              <label for="to-currency" class="to-currency-label"
                 >Norima valiuta:</label
               >
-              <select name="" id="choose-currency" class="input-current-value">
-                <!-- ADD VALUES??? -->
-                <option value="">United States Dollar</option>
-                <option value="">Canadian Dollar</option>
-                <option value="">Australian Dollar</option>
-                <option value="">Euro</option>
+              <select id="to-currency" class="field-control">
+                <option value="usd">United States Dollar</option>
+                <option value="cad">Canadian Dollar</option>
+                <option value="aud">Australian Dollar</option>
+                <option value="eur">Euro</option>
               </select>
               <small
                 >Pasirinkite į kokią valiutą norite keisti turimą sumą.</small
               >
             </div>
-            <button>Konvertuoti</button>
+            <button id="convert-btn">Konvertuoti</button>
           </div>
         </div>
       </div>
