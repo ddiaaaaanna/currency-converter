@@ -16,6 +16,7 @@
   <body>
     <main>
       <div class="currency-exchange">
+        <!-- PHOTO SIDE -->
         <div class="photo-side">
           <img src="./img/piggybank-img.png" alt="piggybank" />
         </div>
@@ -58,8 +59,14 @@
                 >Select the currency you want to convert your amount to.</small
               >
             </div>
-            <button id="convert-btn">Convert</button>
+            <div class="btn-container">
+              <button id="convert-btn" class="form-btn" type="submit">
+                Convert
+              </button>
+              <button id="reset-btn" class="form-btn hidden">Reset</button>
+            </div>
           </div>
+          <div id="converter-result"></div>
         </div>
       </div>
     </main>

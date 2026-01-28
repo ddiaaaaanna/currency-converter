@@ -88,6 +88,21 @@ small {
   flex-direction: column;
 }
 
+/* BUTTONS CLASSLISTS */
+.danger {
+  border: 2px solid red;
+}
+
+.used {
+  color: grey !important;
+  background-color: rgb(162, 160, 160) !important;
+  cursor: not-allowed !important;
+}
+
+.hidden {
+  display: none;
+}
+
 #from-currency {
   width: 100px;
 }
@@ -104,10 +119,16 @@ input {
   margin-top: 25px;
 }
 
-#convert-btn {
+#reset-btn {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.form-btn {
   margin-top: 35px;
   border: none;
-  padding: 15px 45px;
+  padding: 15px 55px;
   border-radius: 8px;
   background-color: rgba(255, 255, 255, 1);
   font-weight: 700;
@@ -116,13 +137,27 @@ input {
   color: rgba(0, 0, 0, 1);
 }
 
-#convert-btn:hover {
+.form-btn:hover {
   cursor: pointer;
 }
 
-/* PANAIKINTI RODYKLELES IMPUT  */
+.btn-container {
+  display: flex;
+  gap: 25px;
+}
+
+/* PANAIKINTI RODYKLELES INPUT  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+#converter-result {
+  color: white;
+}
+
+#converter-result span {
+  text-transform: uppercase;
+  font-size: 19px;
 }
