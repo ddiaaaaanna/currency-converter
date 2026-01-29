@@ -9,7 +9,7 @@ select {
   font-family: inherit;
 }
 
-.currency-exchange {
+.converter-container {
   display: flex;
   align-items: center;
 }
@@ -146,15 +146,24 @@ input {
   gap: 25px;
 }
 
-/* PANAIKINTI RODYKLELES INPUT  */
+/* REMOVE INPUT ARROWS  */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
+/* SAFARI SELECT FIX */
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 #converter-result {
   color: white;
+  height: 90px;
+  margin-top: 5px;
+  padding: 10px;
 }
 
 #converter-result span {
