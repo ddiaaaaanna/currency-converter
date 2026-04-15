@@ -1,13 +1,22 @@
 # Currency Converter
 
-A simple currency converter built with **HTML, CSS, and JavaScript**.
+Interactive currency converter built with **HTML, CSS, and JavaScript**.
 
 ---
 
-## Screenshots
+## Preview
 
 ![Currency Converter Screenshot 1](./img/screenshot-website1.jpg)
 ![Currency Converter Screenshot 2](./img/screenshot-website2.jpg)
+
+---
+
+## Features
+
+- Convert amounts between currencies
+- Displays the exchange rate
+- Input validation
+- Reset functionality
 
 ---
 
@@ -20,8 +29,16 @@ A simple currency converter built with **HTML, CSS, and JavaScript**.
 
 ---
 
-## Features
+## Tech
 
-- Convert amounts between currencies
-- Displays the exchange rate
-- Input validation and reset functionality
+- HTML
+- CSS
+- JavaScript
+
+---
+
+## What I learned
+
+- Handling user input and validation
+- Working with calculations and data
+- Updating UI dynamically based on user actions
